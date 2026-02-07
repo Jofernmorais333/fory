@@ -77,7 +77,7 @@
     <dependency>
       <groupId>com.esotericsoftware</groupId>
       <artifactId>kryo</artifactId>
-      <version>5.5.0</version>
+      <version>5.6.2</version>
     </dependency>
     <dependency>
       <groupId>de.javakaffee</groupId>
@@ -279,8 +279,7 @@
             <configuration>
               <finalName>${uberjar.name}</finalName>
               <transformers>
-                <transformer
-                  implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                   <mainClass>org.openjdk.jmh.Main</mainClass>
                 </transformer>
               </transformers>
